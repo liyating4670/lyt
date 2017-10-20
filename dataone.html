@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href=""/>
+    <title></title>
+    <style></style>
+</head>
+<body>
+<textarea name="textarea" id="textarea" cols="30" rows="10"onkeyup="a()"></textarea>
+<button id="btn" >提交</button>
+<script>
+    function a(){
+        var tValue=textarea.value.length;
+        if(tValue>60){
+            btn.setAttribute('disabled','disabled');
+        }else{
+            brn.removeAttribute('disabled','disabled')
+        }
+    }
+</script>
+</body>
+</html>
